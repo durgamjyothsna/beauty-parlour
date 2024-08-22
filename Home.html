@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation</title>
+	<style>
+#x{
+	animation-duration: 5s;
+    animation-duration: reverse;
+	animation-iteration-count: infinite;
+	animation-name: color;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: lucida sans-serif;
+
+}
+#y{
+	font-size: 40px;
+	font-weight: bold;
+	color: brown;
+	padding-bottom: 5px;
+    text-align: center;
+}
+#z{
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: cadetblue;
+	padding-bottom: 5px;
+    
+}
+@keyframes color
+{
+	0%{background-color: lightblue;}
+	25%{background-color:lightcyan;}
+	50%{background-color:lightgrey;}
+	75%{background-color:lightyellow;}
+	from{background:lightsteelblue;}
+	to{background: grey;}
+}
+
+ img{
+	text-align: center;
+	width: 200px;
+	animation-name: img;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	background-color: lime;
+
+}
+
+#one{
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-fill-mode:forwards ;
+    animation-duration: 20s;
+}
+#two{
+	animation-timing-function: ease-in;
+	animation-duration: reverse;
+	animation-fill-mode: backwards;
+    animation-duration: 30s;
+}
+#three{
+	animation-timing-function: ease-out;
+	animation-duration: alternate;
+	animation-fill-mode:both ;
+    animation-duration: 40s;
+}
+@keyframes img{
+	from{margin-left: 60%;background-color: mediumblue;}
+	to{margin-left: 0%;background-color: mediumseagreen;}
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+	<div id="x">
+
+	   <div id="y">RP BEAUTY PARLOUR</div>
+	   <div id="z">ONLY FOR LADIES</div>
+	</div>
+	<img src ="beauty menu.jpg" alt="beauty menu" style="width:100%" id="one">
+    <img src ="beauty menu1.jpg" alt="beauty menu1" style="width:100%" height="5%" id="two">
+    <img src ="beauty menu2.jpg" alt="beauty menu2" style="width:100%" height="5%" id="three">
+
+    <div class="about-section">
+        <h1>RP BEAUTY PARLOUR</h1>
+        <P>jyothsnadurgam23@gmail.com</P>
+        <p>phone:7095675490</p>
+	
+
+</body>
+</html>
